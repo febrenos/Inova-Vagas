@@ -1,0 +1,128 @@
+				PREPARACAO DE AMBIENTE
+
+SOBRE JAVA
+
+   JavaScript é uma linguagem de script que ajuda a criar 
+páginas da web interativas, enquanto o Typescript é um 
+superconjunto do JavaScript.
+   O código typescript precisa ser compilado, enquanto o 
+código JavaScript não precisa ser compilado. É utilizando 
+somente em ambiente de desenvolvimento e é totalmente convertido 
+para JavaScript no processo de build de produção, ou seja, o 
+navegador ou o Node lerão somente código JS no fim das contas.
+
+-----------------------------------------------------------------------------
+
+>criar Projeto
+	yarn create react-app tutorial --template typescript
+ 
+>No console instale o router do react
+	yarn add react-router-dom
+	
+>Teremos que baixar um arquivo pq estamos usando typescript
+	yarn add @types/react-router-dom -D
+
+>Biblioteca Bootstrap
+	yarn add react-bootstrap bootstrap
+	yarn add @types/react-bootstrap -D
+	yarn add @types/bootstrap -D
+
+>instalar versao mais estavel do typescript (dar preferencia versao sem beta e dev)
+yarn add typescript
+yarn add typescript@4.1.0
+
+Install nodejs
+https://nodejs.org/en/
+
+React bootstrap
+https://www.youtube.com/watch?v=2SD-JuqxCWk
+
+chart.js
+https://www.youtube.com/watch?v=l0K95at8BVg
+
+
+Install Yarn or Npm
+Yarn and Npm are packeges for JavaScript, but Yarn is from facebook
+https://classic.yarnpkg.com/pt-BR/docs/install/#windows-stable
+https://classic.yarnpkg.com/pt-BR/docs/cli/install/Graficos
+
+-----------------------------------------------------------------------------
+>>Criando o Projeto
+abra a pasta
+> cd Nome da pasta
+> yarn create react-app nomeProjeto --template typescript (não começar com letra maiscula o nome do projeto)
+> Acesse a pasta - cd NomeProjeto
+> Abra o VsCode - code . (se não abrir assim, abra o projeto pelo VsCode direto)
+> Abra o terminal - CTRL + ‘
+>yarn start
+
+>>Limpar os arquivos não interessantes:
+	readme
+	src\ remover css (criaremos depois)
+	SVG logo
+	ServiceWorker (usado qdo utiliza PWA)
+	Arquivo de teste
+	SetupTests
+>Dará uns erros e para corrigi-los:
+	Acesse index.tsx: 
+		Remova import as serviceWorker
+		Remova import arquivo.css
+		Remova a última linha do serviceWorker com os comentários
+	Acesse App.tsx:
+		Remova Logo e css
+		Remova remover o header
+		Insira um <h1>Olá mundo</h1> dentro da div classname=”App”
+
+	Acesse public
+		Remova tudo que não for o index.html
+		No arquivo index.html:
+			Remova o    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+			Remova meta description até <title>
+			Em <title> renomeie o título da sua página
+
+>>Componentes
+>Criar pasta no src pages
+>Dentro de pages criar pasta home e um arquivo index.tsx
+>Dentro de index.tsx:
+	
+import React from ‘react’;
+	
+function Home(){
+return (
+ <h1>Home</h1>
+)
+}
+	export default Home;
+
+>Criar na src a pasta components e dentro dela a pasta header e dentro dela um arquivo index.tsx:
+function Header() {
+  return (
+    <div className="header">
+      <h1>Cabaçalho</h1>
+    </div>
+  );
+}
+
+>Na página Home:
+import React from ‘react’;
+import Header from ‘../../components/Header’;
+
+	
+function Login(){
+return (
+ <Header/>
+ <h1>Login</h1>
+)
+	}
+	export default Login;
+
+>No App.tsx:
+
+function App() {
+  return (
+    <div className="App">
+      <Home/>
+    </div>
+  );
+}
+export default App;
