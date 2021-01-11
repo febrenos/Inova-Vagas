@@ -1,4 +1,5 @@
 #OBJETIVO DA INOVA
+
 O SENAI possui um processo de Contratacao porem essa 
 forma nao eh tao eficaz.
 A inova promete entregar aos usuarios da plataforma uma experiencia
@@ -9,6 +10,7 @@ para empresas pareciras do SENAI, td isso com um controle
 administrativo efetuado no proprio sistem
 
 #PARTES DOS PROJETO
+
 utilizamos a metodolugia agil scrum separando 5 sprints
 
 Sprint 1                                                                                                                                                                           
@@ -32,9 +34,11 @@ A Versão Mobile, no caso aplicativo propusemos todas as especificacoes
 porem para o aluno somente utilizamos tambem react native type script.
 
 #sobre documantacao
+
 Nela engloba-se todas as informações pertinentes
 ao projeto, aonde definimos todas as funcionalidades dele etc
 
 #Regras de negocio
+
 sao regras que fazem todas as funcionalidades
 nosso sistema
