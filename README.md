@@ -6,7 +6,7 @@ inovadora aumentando a facilicade de emprego de forma
 automatizada, e uma maior organizacao para empresas, alunos 
 e administradores facilitar a divulgacao de vagas de emprego 
 para empresas pareciras do SENAI, td isso com um controle
-administrativo efetuado no proprio sistem
+administrativo efetuado no proprio sistema
 
 # PARTES DOS PROJETO
 utilizamos a metodolugia agil scrum separando 5 sprints
