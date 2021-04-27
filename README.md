@@ -9,7 +9,8 @@ para empresas pareciras do SENAI, td isso com um controle
 administrativo efetuado no proprio sistema
 
 # PARTES DOS PROJETO
-utilizamos a metodolugia agil scrum separando 5 sprints
+utilizamos a metodolugia agil scrum com azure devops separando 5 sprints
+(use também trello e slack)
 
 Sprint 1                                                                                                                                                                           
 A sprint da Documentacao relatamos quesitos funcionais, 
